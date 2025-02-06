@@ -1,3 +1,12 @@
+var develop=new Typed(".developer",{
+    strings:["A Full Stack Java Developer"],
+    loop:true,
+    typeSpeed:100,
+    backSpeed:80,
+    backDelay:2000,
+})
+
+
 (function () {
     [...document.querySelectorAll(".control")].forEach(button => {
         button.addEventListener("click", function() {
