@@ -13,4 +13,16 @@ function   greetings () {
         document.body.classList.toggle("light-mode");
     })
 };
-
+let index=0;
+const span=document.querySelector(".developer");
+const text=document.querySelector(".developer").innerHTML;
+function showLetter(){
+    if(index<text.length){
+        span.textContent=text.slice(0,index+1);
+        index++;
+    }
+    else{
+        clearInterval(interval)
+    }
+}
+const interval = setInterval(showLetter, 500);
