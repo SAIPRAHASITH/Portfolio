@@ -23,7 +23,7 @@ function showLetter(){
     }
     else{
         index=0;
-        showletter();
+       showletter();
     }
 }
 const interval = setInterval(showLetter, 300);
