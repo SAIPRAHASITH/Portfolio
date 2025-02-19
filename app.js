@@ -22,7 +22,8 @@ function showLetter(){
         index++;
     }
     else{
-        clearInterval(interval)
+        index=0;
+        showletter();
     }
 }
-const interval = setInterval(showLetter, 500);
+const interval = setInterval(showLetter, 300);
